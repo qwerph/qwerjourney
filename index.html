@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport"
+    content="width=device-with, initial-scale=1">
+    <title>tripleS Philippines</title>
+    <link rel="icon" type="image/x-icon" href="QWER IN RIDE.png">
+    <link rel="stylesheet" href="index.css"/> 
+</head>
+<body>
+<audio type="audio/mp3" src="bgm1.m4a" autoplay loop></audio>
+<div class="buttons">
+    <img src="clouds 2.png" class="frz3"  draggable="false">
+    
+    <div class="windowss" id="windowss">
+    <img src="window.png" class="wnd1" id="wnd1"  draggable="false">
+    <img src="BACKGROUND  exit.png" id="bgxt" draggable="false">
+    <img src="Message inv.png" id="msg1" draggable="false" onclick="">
+    <img src="inv1.png" id="inv1" draggable="false" onclick="">
+    </div>
+  <audio id="btnck" src="button sfx.m4a"></audio>
+
+
+    <img src="Camera.png" class="btn1" onclick="window1()" draggable="false">
+    <img src="message.png" class="btn2" id="but2" onclick="window1()" draggable="false">  
+    <img src="map.png" class="btn3" onclick="window1()" draggable="false">
+    <img src="Signal.png" class="frz1" draggable="false" >
+    <img src="Battery.png" class="frz2" draggable="false" >
+
+    
+</div>
+<img src="" id="pop" draggable="false">
+
+<div class="main">
+    <audio id="sound1" src="letgovoice.m4a" preload="auto"></audio>
+    <img src="QWER IN RIDE.png" id="subject" draggable="false" onclick="van()">
+    
+    <img src="Terrain Mobile1.png" id="terrain" draggable="false">
+</div>
+
+</body>
+
+<script>
+function window1(){
+    document.getElementById("btnck").play()
+    var inv1 = document.getElementById("inv1");
+    var mes1 = document.getElementById("msg1");
+    var wndw = document.getElementById("windowss")
+
+         document.addEventListener('click', e => {
+            document.getElementById("btnck").play()
+            if (e.target.id == "but2"){
+                
+                wndw.style.display = 'block'
+                mes1.style.display = 'block'
+                
+
+            }
+
+            if (e.target.id == "bgxt") {
+                wndw.style.display = "none"
+                
+                    
+
+            }
+
+            if (e.target.id == "msg1") {
+                inv1.style.display = "block"
+                   
+                setTimeout(()=> {
+                    inv1.style.display = 'none'},3000)
+    
+                        }
+        })
+
+        
+        
+}
+
+
+
+
+function van(pck){
+   
+      var pup = document.getElementById('pop');
+        /*document.getElementById('sound1').play()*/
+    const images = [
+  'pop1', 'pop2', 'pop3', 'pop4'
+];
+    let img = images.length
+  var pck = Math.floor(Math.random()*img);
+let let1 = images.at(pck)
+  document.getElementById('pop').src = let1 + ".png";
+
+
+
+        pup.style.display = 'block'
+    
+        setTimeout(()=> {
+            pup.style.display = 'none'
+            
+        },4000)
+
+    }
+
+
+
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
