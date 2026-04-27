@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="index.css"/> 
 </head>
 <body>
-<audio loop autoplay src="bgm1.m4a" ></audio>
 <div class="buttons">
     <img src="clouds 2.png" class="frz3"  draggable="false">
     
@@ -40,6 +39,12 @@
 </body>
 
 <script>
+document.body.addEventListener('click', function() {
+    let audio = new Audio('bgm1.m4a');
+    audio.loop = true;
+    audio.play();
+}, { once: true });
+
 function window1(){
     document.getElementById("btnck").play()
     var inv1 = document.getElementById("inv1");
