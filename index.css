@@ -1,4 +1,4 @@
-@media screen and (min-width:600px) and (min-height:337.5px) {
+@media screen and (min-width:601px) and (min-height:337.5px) {
     
 body{
     margin: 0 auto;
@@ -192,7 +192,7 @@ body{
 
 }
 
-@media screen and (max-width:599px) {
+@media screen and (max-width:600px)   {
     body{
     margin: 0 auto;
     background-image: url(BACKGROUND\ SKY1.png);
@@ -208,7 +208,7 @@ body{
     position: relative;
     width: 70%;
     margin-left: 15%;
-    margin-top: 80%;
+    margin-top: 50vh;
     transition: 0.2s;
     z-index: 2;
     
@@ -224,7 +224,7 @@ body{
 #terrain{
     
     margin-top: 34.69%;
-    width: 100%;
+    width: 150%;
     margin-top: -0.7%;
     z-index: 3;
 }
@@ -232,7 +232,7 @@ body{
 .btn1{
     position: absolute;
     width: 20%;
-    margin-top: 153%;
+    margin-top: 87vh;
     margin-left: 70%;
     transition: 0.2s;
     filter: drop-shadow(0 0 3px #ffffff);
@@ -249,7 +249,7 @@ body{
 .btn2{
     position: absolute;
     width: 20%;
-    margin-top: 153%;
+    margin-top: 87vh;
     margin-left: 40%;
     transition: 0.2s;
     filter: drop-shadow(0 0 3px #ffffff);
@@ -266,7 +266,7 @@ body{
 .btn3{
     position: absolute;
     width: 20%;
-    margin-top: 150%;
+    margin-top: 86vh;
     margin-left: 9%;
     transition: 0.2s;
     filter: drop-shadow(0 0 3px #ffffff);
@@ -349,6 +349,14 @@ body{
 #bgxt{
     position: absolute;
     z-index: 4;
+    opacity: 0.5;
+
+}
+
+#bgxt2{
+    display: none;
+    position: absolute;
+    z-index: 6;
     opacity: 0.5;
 
 }
