@@ -250,7 +250,6 @@ body{
     position: absolute;
     width: 20%;
     margin-top: 65vh;
-    padding-bottom: 50vh;
     margin-left: 40%;
     transition: 0.2s;
     filter: drop-shadow(0 0 3px #ffffff);
