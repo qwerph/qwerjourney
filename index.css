@@ -208,7 +208,7 @@ body{
     position: relative;
     width: 70%;
     margin-left: 15%;
-    margin-top: 50vh;
+    margin-top:40vh;
     transition: 0.2s;
     z-index: 2;
     
@@ -232,7 +232,7 @@ body{
 .btn1{
     position: absolute;
     width: 20%;
-    margin-top: 75vh;
+    margin-top: 65vh;
     margin-left: 70%;
     transition: 0.2s;
     filter: drop-shadow(0 0 3px #ffffff);
@@ -249,7 +249,7 @@ body{
 .btn2{
     position: absolute;
     width: 20%;
-    margin-top: 75vh;
+    margin-top: 65vh;
     padding-bottom: 50vh;
     margin-left: 40%;
     transition: 0.2s;
@@ -267,7 +267,7 @@ body{
 .btn3{
     position: absolute;
     width: 20%;
-    margin-top: 73vh;
+    margin-top: 63vh;
     margin-left: 9%;
     transition: 0.2s;
     filter: drop-shadow(0 0 3px #ffffff);
@@ -385,7 +385,5 @@ body{
     z-index: 7;
 }
 
-
-}
 
 }
