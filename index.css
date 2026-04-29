@@ -232,7 +232,7 @@ body{
 .btn1{
     position: absolute;
     width: 20%;
-    margin-top: 87vh;
+    margin-top: 75vh;
     margin-left: 70%;
     transition: 0.2s;
     filter: drop-shadow(0 0 3px #ffffff);
@@ -249,8 +249,8 @@ body{
 .btn2{
     position: absolute;
     width: 20%;
-    margin-top: 87vh;
-    margin-bottom: 13vh;
+    margin-top: 75vh;
+    padding-bottom: 50vh;
     margin-left: 40%;
     transition: 0.2s;
     filter: drop-shadow(0 0 3px #ffffff);
@@ -267,7 +267,7 @@ body{
 .btn3{
     position: absolute;
     width: 20%;
-    margin-top: 86vh;
+    margin-top: 73vh;
     margin-left: 9%;
     transition: 0.2s;
     filter: drop-shadow(0 0 3px #ffffff);
@@ -286,7 +286,7 @@ body{
     display: none;
     position: absolute;
     width: 60%;
-    margin-top: 65%;
+    margin-top: 80%;
     margin-left: 25%;
     animation-name: popup;
     animation-duration: 0.3s;
@@ -385,5 +385,7 @@ body{
     z-index: 7;
 }
 
+
+}
 
 }
