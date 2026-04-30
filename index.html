@@ -92,6 +92,7 @@ function window1(){
 function van(pck){
    
       var pup = document.getElementById('pop');
+      var sub = document.getElementById('subject');
         /*document.getElementById('sound1').play()*/
     const images = [
   'pop1', 'pop2', 'pop3', 'pop4'
@@ -102,13 +103,17 @@ let let1 = images.at(pck)
   document.getElementById('pop').src = let1 + ".png";
 
 
-
+        if (sub.onclick) {
+        sub.onclick = ""
         pup.style.display = 'block'
-    
         setTimeout(()=> {
-            pup.style.display = 'none'
-            
-        },4000)
+            sub.onclick = van
+             pup.style.display = 'none'
+             s
+        },3000)
+        
+        
+    }
 
     }
 
