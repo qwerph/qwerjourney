@@ -8,12 +8,17 @@
     <link rel="stylesheet" href="index.css"/> 
 </head>
 <body>
+<iframe id="ytcrm" src="https://www.youtube.com/embed/A8d2Gx91zwk?autoplay=1&mute=1"
+ title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write;
+  encrypted-media; gyroscope; picture-in-picture; fullscreen; web-share" 
+  referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
+    
 <div class="windowss" id="windowss">
     <img src="window.png" class="wnd1" id="wnd1"  draggable="false">
     <img src="BACKGROUND  exit.png" id="bgxt" draggable="false">
     <img src="Message inv.png" id="msg1" draggable="false" onclick="">
-    <img src="inv1.png" id="inv1" draggable="false" onclick="">
+    <img src="inv1-1.png" id="inv1" draggable="false" onclick="">
     </div>
     
   <audio id="btnck" src="button sfx.m4a"></audio>
@@ -39,18 +44,15 @@
 </body>
 
 <script>
-document.body.addEventListener('click', function() {
-    let audio = new Audio('bgm1.m4a');
-    audio.loop = true;
-    audio.play();
-}, { once: true });
 
 function window1(){
     document.getElementById("btnck").play()
+    var you = document.getElementById("ytcrm")
     var inv1 = document.getElementById("inv1")
     var mes1 = document.getElementById("msg1")
     var wndw = document.getElementById("windowss")
     var bgtxt = document.getElementById("bgtxt")
+    var poss = document.getElementById("bgm1")
     
          document.addEventListener('click', e => {
             document.getElementById("btnck").play()
@@ -59,31 +61,39 @@ function window1(){
                 wndw.style.display = 'block'
                 mes1.style.display = 'block'
                 
+                
 
             }
 
             if (e.target.id == "bgxt"  && wndw.style.display == "block" && inv1.style.display == "block" ) {
                 wndw.style.display = "none"
                 inv1.style.display = "none"
+                you.style.display = 'none'
                     
             }
 
             if (e.target.id == "msg1") {
+
+                you.style.display = 'block'
                 inv1.style.display = "block"
+                
                    
         
         }
 
             if (e.target.id == "bgxt" && mes1.style.display == "block") {
                 wndw.style.display = "none"
-            
-                
-        }
-              if (e.target.id == "wnd1") {
-                inv1.style.display = "none"
                    
         
         }
+            if (e.target.id == "wnd1") {
+                inv1.style.display = "none"
+                you.style.display = 'none'
+                   
+            
+        
+        }
+
 
          })
 }
@@ -95,7 +105,7 @@ function van(pck){
       var sub = document.getElementById('subject');
         /*document.getElementById('sound1').play()*/
     const images = [
-  'pop1', 'pop2', 'pop3', 'pop4'
+  'pop1', 'pop2', 'pop3', 'pop4', 'pop5'
 ];
     let img = images.length
   var pck = Math.floor(Math.random()*img);
