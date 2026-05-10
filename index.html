@@ -20,19 +20,38 @@
     <img src="BACKGROUND  exit.png" id="bgxt" draggable="false">
     <img src="Message inv.png" id="msg1" draggable="false" onclick="">
     <img src="inv1-1.png" id="inv1" draggable="false" onclick="">
+    <img src="regform.png" id="reg1" draggable="false" onclick="location.href = 'https://forms.gle/XCkiDd7fMUq8a76t6'">
     </div>
-    
+
+
+<div class="windowss1" id="windowss1">
+    <img src="window.png" class="wnd2" id="wnd2"  draggable="false">
+    <img src="BACKGROUND  exit.png" id="bgxt" draggable="false">
+    <img src="gall logo.png" id="gal1" draggable="false" onclick="location.href = 'https://www.facebook.com/share/p/18L5Sfw3wr/'">
+
+</div>
+
+
+<div class="windowss2" id="windowss2">
+    <img src="windowmap.png" class="map1" id="map1"  draggable="false">
+    <img src="BACKGROUND  exit.png" id="bgxt" draggable="false">
+
+</div>
+
+
   <audio id="btnck" src="button sfx.m4a"></audio>
+
 <div class="buttons">
     <img src="clouds 2.png" class="frz3"  draggable="false">
     
     
-    <img src="Camera.png" class="btn1" onclick="window1()" draggable="false">
+    <img src="Camera.png" class="btn1" id="but1" onclick="window2()" draggable="false">
     <img src="message.png" class="btn2" id="but2" onclick="window1()" draggable="false">  
-    <img src="MAP.png" class="btn3" onclick="window1()" draggable="false">
+    <img src="map.png" class="btn3" id="but3" onclick="window3()" draggable="false">
     <img src="Signal.png" class="frz1" draggable="false" >
     <img src="Battery.png" class="frz2" draggable="false" >
 
+    
 </div>
 <img src="" id="pop" draggable="false">
 
@@ -46,33 +65,36 @@
 
 <script>
 
+document.addEventListener('click', e => {
+            document.getElementById("btnck").play()
+})
+
 function window1(){
-
-
-    document.getElementById("btnck").play()
+   
     var you = document.getElementById("ytcrm")
     var inv1 = document.getElementById("inv1")
     var mes1 = document.getElementById("msg1")
     var wndw = document.getElementById("windowss")
     var bgtxt = document.getElementById("bgtxt")
     var poss = document.getElementById("bgm1")
+    var reg = document.getElementById("reg1")
     
          document.addEventListener('click', e => {
-            document.getElementById("btnck").play()
+            
             if (e.target.id == "but2"){
-                
                 wndw.style.display = 'block'
                 mes1.style.display = 'block'
+                reg.style.display = 'block'
                 
-                
-
+            
             }
 
             if (e.target.id == "bgxt"  && wndw.style.display == "block" && inv1.style.display == "block" ) {
                 wndw.style.display = "none"
                 inv1.style.display = "none"
                 you.style.display = 'none'
-                    
+                mes1.style.display = 'none'
+                reg.style.display = 'none'
             }
 
             if (e.target.id == "msg1") {
@@ -83,18 +105,17 @@ function window1(){
         
         }
 
-            if (e.target.id == "bgxt" && mes1.style.display == "block") {
+            if (e.target.id == "bgxt") {
                 wndw.style.display = "none"
-                   
+                mes1.style.display = 'none'
+                reg.style.display = 'none'
         
         }
             if (e.target.id == "wnd1") {
                 inv1.style.display = "none"
                 you.style.display = 'none'
                 
-            
-            
-        
+       
         }
 
 
@@ -102,6 +123,66 @@ function window1(){
         
 }
 
+function window2(){
+   
+    
+    var wndw1 = document.getElementById("windowss1")
+    var bgtxt = document.getElementById("bgtxt")
+    var poss = document.getElementById("bgm1")
+    var gal = document.getElementById("gal1")
+    
+         document.addEventListener('click', e => {
+            
+            if (e.target.id == "but1") {
+                wndw1.style.display = "block"
+                gal.style.display = "block"
+            }
+
+            if (e.target.id == "bgxt"  && wndw1.style.display == "block") {
+                wndw1.style.display = "none"
+                
+            }
+
+            if (e.target.id == "bgxt") {
+                wndw1.style.display = "none"
+        
+        
+        }
+
+         })
+        
+}
+
+
+function window3(){
+   
+    
+    var wndw2 = document.getElementById("windowss2")
+    var bgtxt = document.getElementById("bgtxt")
+    var poss = document.getElementById("bgm1")
+    var map = document.getElementById("map1")
+    
+         document.addEventListener('click', e => {
+            
+            if (e.target.id == "but3") {
+                wndw2.style.display = "block"
+                map1.style.display = "block"
+            }
+
+            if (e.target.id == "bgxt"  && wndw2.style.display == "block") {
+                wndw2.style.display = "none"
+                
+            }
+
+            if (e.target.id == "bgxt") {
+                wndw2.style.display = "none"
+        
+        
+        }
+
+         })
+        
+}
 
 
 
