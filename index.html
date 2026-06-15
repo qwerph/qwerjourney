@@ -28,6 +28,7 @@
     <img src="window.png" class="wnd2" id="wnd2"  draggable="false">
     <img src="BACKGROUND  exit.png" id="bgxt" draggable="false">
     <img src="gall logo.png" id="gal1" draggable="false" onclick="location.href = 'https://www.facebook.com/share/p/18L5Sfw3wr/'">
+    <img src="gall logo 2.png" id="gal2" draggable="false" onclick="location.href = 'https://www.facebook.com/share/p/18c3MkZ75V/'">
 
 </div>
 
@@ -130,12 +131,14 @@ function window2(){
     var bgtxt = document.getElementById("bgtxt")
     var poss = document.getElementById("bgm1")
     var gal = document.getElementById("gal1")
+    var gal2 = document.getElementById("gal2")
     
          document.addEventListener('click', e => {
             
             if (e.target.id == "but1") {
                 wndw1.style.display = "block"
                 gal.style.display = "block"
+                gal2.style.display = "block"
             }
 
             if (e.target.id == "bgxt"  && wndw1.style.display == "block") {
